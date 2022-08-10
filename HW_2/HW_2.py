@@ -53,7 +53,6 @@ else:
     print('NO')
 
 # 5. У математиці функцію `sign(x)` (знак числа) визначено так:
-#   ``
 #   sign(x) = 1, якщо x > 0,
 #   sign(x) = -1, якщо x < 0,
 #   sign(x) = 0 якщо x = 0.
@@ -76,12 +75,12 @@ else:
 #  ** В ідеалі список повинен бути записаний як кортеж один раз.
 
 number = input('Введіть число >>> ')
-number = float(number)
+number = int(number)
 elements = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 elements = tuple(elements)
 for x in range(len(elements)):
     if elements[x] == number or elements[x] == abs(number):
-        print(f'Число {int(number)} є у списку')
+        print(f'Число {(number)} є у списку')
 
 # 7. Написати програму "Показати зірки". На вхід приймає звичайне ціле число, має надрукувати кількість зірок:
 #   Приклад:
