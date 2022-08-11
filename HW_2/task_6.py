@@ -7,9 +7,13 @@
 #  ** В ідеалі список повинен бути записаний як кортеж один раз.
 
 number = input('Введіть число >>> ')
-number = int(number)
+number = float(number)
 elements = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 elements = tuple(elements)
+# Також кортедж можна записати таким чином:
+# elements = tuple(range(10,101,10))
 for x in range(len(elements)):
     if elements[x] == number or elements[x] == abs(number):
-        print(f'Число {(number)} є у списку')
+        print(f'Число {int(number)} є у списку')
+
+

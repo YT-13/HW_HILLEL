@@ -4,7 +4,7 @@
 #     Next number for number 1234 is 1235.
 #     Previous number for number 1234 is 1233.
 
-number = input('Please enter an integer number >>>')
+number = input('Please enter an integer number >>> ')
 number_next = int(number) + 1
 number_before = int(number) - 1
 print(number_next)
